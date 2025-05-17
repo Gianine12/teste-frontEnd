@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/header";
-
+import 'leaflet/dist/leaflet.css';
 
 export const metadata: Metadata = {
   title: "Interface para Listagem de Usuários",
@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body
-        className={`antialiased`}
+        className={`h-full antialiased`}
       >
         <Header/>
         {children}
